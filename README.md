@@ -70,7 +70,6 @@ var data = {
 };
 req.sessions.set(data, function(success){});
 ```
-
 ### Удаление данных (до установки заголовков res.writeHead)
 ```JS
 req.sessions.delete( name, function(success){} );
@@ -79,21 +78,18 @@ req.sessions.delete( name, function(success){} );
 ```JS
 req.sessions.delete( [name1, name2], function(success){} );
 ```
-
 ### Извлечение и удаление удиночных данных (флэш-данных)  (до установки заголовков res.writeHead)
 ```JS
 req.sessions.pop( name, function(success, value){} );
 ```
-
 ### Получение копии строки сессии
-
+```JS
 var my_session_row = req.sessions.row;
-
+```
 ### Получение всех пользовательских данных
 ```JS
 var my_session_data = req.sessions.parse;
 ```
-
 ### Получение отдельных пользовательских данных
 ```JS
 var user_id = req.sessions.parse['user_id'];
