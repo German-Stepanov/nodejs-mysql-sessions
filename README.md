@@ -74,7 +74,9 @@ req.sessions.set(data, function(success){});
 ### Удаление данных (до установки заголовков res.writeHead)
 ```JS
 req.sessions.delete( name, function(success){} );
+```
 или
+```JS
 req.sessions.delete( [name1, name2], function(success){} );
 ```
 
