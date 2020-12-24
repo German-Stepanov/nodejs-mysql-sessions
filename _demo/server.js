@@ -32,14 +32,14 @@ var cookies = require('encode-decode-cookies')(myConfig.cookies);
 
 //Конфигурация базы данных 
 myConfig.db = {
-	host 		: '192.168.1.110',
-	user 		: 'fajans',	
-	password 	: '12345',
+	host 		: 'localhost',
+	user 		: 'user',	
+	password 	: 'password',
 	database 	: 'test',	
 };
 //Конфигурация сессий
 myConfig.sessions = {
-	db			: myConfig.db,
+	db		: myConfig.db,
 	label		: 'SN',		//Название метки в кукисах
 	timeout 	: 60,		//Время жизни сессии при бездействии, секунд
 	checkIP		: false,	//Проверять изменение IP					
