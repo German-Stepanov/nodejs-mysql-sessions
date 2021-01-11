@@ -1,6 +1,6 @@
 {
   "name": "mysql-sessions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sessions for MySQL",
   "main": "index.js",
   "dependencies": {

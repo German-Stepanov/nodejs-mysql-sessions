@@ -136,7 +136,7 @@ var Sessions = function (config) {
 						//Сохранение строки
 						row		: session_row,
 						//Парсинг данных клиента
-						parse	: JSON.parse(session_row['session_data']),
+						parse	: session_row['session_data'] ? JSON.parse(session_row['session_data']) : {},
 						//Функция устанавки данных клиента
 						set	: function (data, next) {
 							//Устанавливаем значения
