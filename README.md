@@ -44,11 +44,11 @@ var sessions = require('mysql-sessions')({
 //Формируем задачу
 var app = function(req, res) {
 	
-	//Подключаем и запускаем модуль кукисов
+	//Запускаем модуль кукисов
 	cookies.start(req, res);
 	console.log(req.cookies);
 	
-	//Подключаем и запускаем модуль сессий
+	//Запускаем модуль сессий
 	sessions.start(req, res, function () {
 		console.log(req.sessions);
 		...
@@ -102,9 +102,9 @@ var user_id = req.sessions.parse['user_id'];
 - модуля cookies (пароль шифрования)
 - модуля sessions (параметры соединения с БД, метку куки, время допустимого бездействия и флаг проверки IP алреса).
 ```
-### Запуск тестового сервера (из папки "mysql-sessions")
+### Запуск тестового сервера (из папки "_demo")
 ```
-npm run demo
+node server
 ```
 ### Результат
 ```
